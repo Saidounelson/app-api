@@ -1,4 +1,4 @@
-version: "3"
+version: "3.7"
 services:
   app:
     build:
@@ -9,4 +9,6 @@ services:
       - ./app:/app
     command: > 
       sh -c "python manage.py runserver 0.0.0.0:8000"
+    environment:
+      - DEBUG=1
 
