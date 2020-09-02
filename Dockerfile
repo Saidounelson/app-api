@@ -13,7 +13,7 @@ WORKDIR /app
 COPY ./app /app 
 COPY ./scripts /scripts
 
-RUN chmod +* /scripts/*
+RUN chmod 755 /scripts/*
 
 RUN mkdir -p /vol/web/media
 RUN mkdir -p /vol/web/
